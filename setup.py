@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="AlgoTradingDeepLearning",
-    version="0.0.0",
+    version="0.0.1",
     author="Zach Holmes",
     author_email="zholmes13@gmail.com",
     description="AlgoTradingDeepLearning is a deep learning framework for algorithmic trading.",
