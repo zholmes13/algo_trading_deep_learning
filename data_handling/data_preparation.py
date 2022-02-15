@@ -62,10 +62,8 @@ def get_class_distribution(obj):
 
     return count_dict
 
-def buildTargets_VolOnly(full_df = full, train_observations = train.shape[0],
-                         val_observations = val.shape[0],
-                         test_observations = test.shape[0],
-                         alph = .15, volity_int = 10):
+
+def buildTargets_VolOnly(full_df, volity_int=10):
 
     """
     This function will take a complete set of train, val, and test data and return the targets.
@@ -77,7 +75,4 @@ def buildTargets_VolOnly(full_df = full, train_observations = train.shape[0],
     returns.fillna(0, inplace=True)
     volatility = returns.rolling(window=(volity_int)).std()*np.sqrt(volity_int)
 
-
-
     return volatility
-    #return train_targets, val_targets, test_targets, full_targets
