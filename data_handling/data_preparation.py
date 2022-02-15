@@ -1,5 +1,5 @@
 import numpy as np
-
+import pandas as pd
 
 # create target from OHLC and Volume Data
 def buildTargets(obs_array,
